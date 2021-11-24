@@ -31,7 +31,7 @@ div.card {
     width: 300px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 18fr 4fr 4fr 3fr 1fr 4fr;
+    grid-template-rows: 18fr 4fr 4fr 3fr 1fr;
     grid-template-areas: 
         "nft nft"
         "title title"
@@ -61,7 +61,7 @@ div.price {
 img.eth {
     height: 17px;
     width: 11px;
-    padding-right: 0.5rem;
+    padding-right: 0.4rem;
 }
 div.countdown {
     font-size: 0.9rem;
@@ -73,18 +73,15 @@ div.countdown {
 img.clock {
     height: 16px;
     width: 16px;
-    padding-right: 0.5rem;
-}
-hr.divider {
-    grid-area: divider;
-    height: 0;
-    width: 100%;
+    padding-right: 0.4rem;
 }
 div.creator {
     font-size: 0.9rem;
     grid-area: creator;
     display: inline-flex;
     align-items: center;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    padding-top: 1rem;
 }
 img.avatar {
     border: 1px solid white;
