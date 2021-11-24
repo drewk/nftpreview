@@ -1,0 +1,95 @@
+html {
+    font: 18px 'Outfit', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+
+h1 { font-size: 1.4rem; font-weight: 400; color: white; }
+h1:hover { color: hsl(178, 100%, 50%); }
+
+a { color: white; text-decoration: none; }
+a:hover { color: hsl(178, 100%, 50%); }
+
+hr { border-style: solid; }
+
+div.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+div.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    box-shadow: 0 0 40px hsl(217, 54%, 7%);
+    padding: 22px;
+    height: 600px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 18fr 4fr 4fr 3fr 1fr 4fr;
+    grid-template-areas: 
+        "nft nft"
+        "title title"
+        "description description"
+        "price countdown"
+        "divider divider"
+        "creator creator";
+}
+img.nft {
+    border-radius: 8px;
+    grid-area: nft;
+}
+h1.title {
+    grid-area: title;
+}
+div.description {
+    grid-area: description;
+}
+div.price {
+    color: hsl(178, 100%, 50%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    grid-area: price;
+    display: inline-flex;
+    align-items: center;
+}
+img.eth {
+    height: 17px;
+    width: 11px;
+    padding-right: 0.5rem;
+}
+div.countdown {
+    font-size: 0.9rem;
+    grid-area: countdown;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+img.clock {
+    height: 16px;
+    width: 16px;
+    padding-right: 0.5rem;
+}
+hr.divider {
+    grid-area: divider;
+    height: 0;
+    width: 100%;
+}
+div.creator {
+    font-size: 0.9rem;
+    grid-area: creator;
+    display: inline-flex;
+    align-items: center;
+}
+img.avatar {
+    border: 1px solid white;
+    border-radius: 36px;
+    height: 36px;
+    width: 36px;
+    margin-right: 1rem;;
+}
